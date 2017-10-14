@@ -26,12 +26,19 @@ app.delete('/word/:id', (req, res) => {
 
 //create
 app.post('/word', jsonParser, (req, res) => {
-
+    const { en, vn } = req.body;
+    const word = new Word({ en, vn });
+    word.save()
+    .then(w => res.send(w))
+    .catch(err => res.send(err));
 });
 
 //update
 app.put('/word/:id', jsonParser, (req, res) => {
-    
+    const { id } = req.params;
+    Word.findByIdAndUpdate(id, req.body)
+    .then(() => res.send({ message: 'OK' }))
+    .catch(err => res.send(err));
 });
 
 /* 

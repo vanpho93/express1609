@@ -10,7 +10,7 @@ const WordSchema = new Schema({
 
 const Word = mongoose.model('words', WordSchema);
 
-mongoose.connect('mongodb://localhost/rn1609', { useMongoClient: true });
+mongoose.connect('mongodb://admin:123@ds159497.mlab.com:59497/rn2222', { useMongoClient: true });
 
 module.exports = Word;
 // create
