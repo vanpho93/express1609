@@ -30,3 +30,14 @@ app.get('/word/:id', (req, res) => {
 });
 
 app.listen(3000, () => console.log('Server started'));
+
+//db -> collections -> documents
+/*
+
+db.words.insertMany([
+    { en: 'hello', vn: 'xin chao' },
+    { en: 'morning', vn: 'buoi sang' },
+    { en: 'afternoon', vn: 'buoi chieu' },
+]);
+
+*/
