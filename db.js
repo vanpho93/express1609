@@ -12,6 +12,7 @@ const Word = mongoose.model('words', WordSchema);
 
 mongoose.connect('mongodb://localhost/rn1609', { useMongoClient: true });
 
+module.exports = Word;
 // create
 
 // const word = new Word({ en: 'code', vn: 'ma nguon' });
