@@ -6,6 +6,8 @@
   "author": "Van Pho Nguyen <vanpho02@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.16.2"
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "uid": "^0.0.2"
   }
 }
